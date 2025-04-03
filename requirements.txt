@@ -4,5 +4,4 @@ plotly
 nltk
 matplotlib
 wordcloud
-ydata-profiling
-streamlit-pandas-profiling
+pandas-profiling
