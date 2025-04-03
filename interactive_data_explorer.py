@@ -3,15 +3,7 @@ import pandas as pd
 import plotly.express as px
 import io
 
-# For optional Pandas Profiling report
-if st.sidebar.button("Generate Pandas Profiling Report"):
-    try:
-        profile = ProfileReport(df, explorative=True)
-        # Convert report to HTML and embed it directly in Streamlit
-        html = profile.to_html()
-        st.components.v1.html(html, height=1000, scrolling=True)
-    except Exception as e:
-        st.error("Error generating profiling report: " + str(e))
+
 
 st.title("Interactive Data Explorer & Analyzer")
 st.sidebar.header("Upload Your Dataset")
