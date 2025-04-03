@@ -33,13 +33,7 @@ if uploaded_file is not None:
         st.write("### Summary Statistics")
         st.dataframe(df.describe())
         
-        # Optional: Generate Pandas Profiling Report
-        if st.sidebar.button("Generate Pandas Profiling Report"):
-            try:
-                profile = ProfileReport(df, explorative=True)
-                st_profile_report(profile)
-            except Exception as e:
-                st.error("Error generating profiling report: " + str(e))
+
         
         # Visualization options in the sidebar
         st.sidebar.header("Visualization Options")
