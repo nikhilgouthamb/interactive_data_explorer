@@ -5,7 +5,7 @@ import io
 
 # For optional Pandas Profiling report
 try:
-    from pandas_profiling import ProfileReport
+    from ydata_profiling import ProfileReport
     from streamlit_pandas_profiling import st_profile_report
 except ImportError:
     st.warning("For advanced EDA, install pandas-profiling and streamlit-pandas-profiling using pip.")
